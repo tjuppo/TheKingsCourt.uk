@@ -1,0 +1,359 @@
+/* Universal Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 2rem;
+    background-color: #1a1a1a;
+    color: #f8f8f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3.6rem;
+    font-family: "Cinzel", sans-serif;
+}
+
+
+h2 {
+    font-size: 3rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.6rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header"
+                         "hero"
+                         "about"
+                         "battles"
+                         "champs"
+                         "footer";
+    grid-template-rows: auto auto auto auto auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c2c2c;
+    color: #b89f64;
+    width: 100%;
+    padding: 3rem;
+}
+
+.breadcrumb {
+    font-family: "Montserrat", serif;
+}
+
+.breadcrumb li {
+    display: inline;
+    padding: 0 1.5rem;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #b89f64;
+}
+
+.breadcrumb li a:hover {
+    color: #fff;
+}
+
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    background-image: url("https://images.unsplash.com/photo-1654457066813-234e82a5e3e0?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(44, 44, 44, 0.7);
+    z-index: 50;
+    padding: 5rem;
+    margin: 20rem auto 20rem 20rem;
+}
+
+.cta-titles {
+    margin-bottom: 5rem;
+}
+
+.cta h2 {
+    color: #b89f64;
+    font-family: "Cinzel", sans-serif;
+}
+
+.cta p {
+    font-family: "Merrriweather", serif;
+}
+
+.cta-button a:hover {
+    background-color: #a18e59;
+}
+
+.cta-button a {
+    text-decoration: none;
+    color: #222222;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: #b89f64;
+    border-radius: 0.5rem;
+}
+
+
+/* About */
+
+.about {
+    display: flex;
+    padding: 5rem;
+    width: 100%;
+}
+
+.about img {
+    max-height: 45rem;
+    width: auto;
+    border: 0.7rem solid #757575;
+    border-radius: 0.3rem;
+}
+
+.about-content {
+    max-height: 45rem;
+    padding-left: 5rem;
+}
+
+.about-content p {
+    line-height: 2.5rem;
+}
+
+.about-content span {
+    font-family: "Cinzel", sans-serif;
+    color: #b89f64;
+}
+
+
+/* Battles Section */
+
+.battles {
+    background-image: url(./images/Battles\ Background\ Image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 100%;
+    height: 49rem;
+}
+
+.battles h2 {
+    max-height: 4.5rem;
+    height: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.card-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.battle-card {
+    display: flex;
+    height: 30rem;
+    width: 30rem;
+    background-color: rgba(184, 159, 100, 0.4);
+    color: #1a1a1a;
+    margin-bottom: 9.5rem;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+}
+
+.battle-card:hover {
+    box-shadow: 0 8px 16px rgba(184, 159, 100, 0.6);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.battle-card h4 {
+    font-family: "Cinzel", serif;
+}
+
+.battle-card h5, 
+.battle-card h6 {
+    font-family: "Merriweather", sans-serif;
+}
+
+/* Champs Section */
+
+.champs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.champs h2 {
+    margin: 3rem auto;
+}
+
+.champs-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.champs figure {
+    padding: 0 4rem;
+}
+
+.champs figure img {
+    height: 35rem;
+    width: auto;
+    border: 0.7rem solid #757575;
+    border-radius: 0.3rem;
+}
+
+.champs figure p, 
+.champs figure figcaption {
+    text-align: center;
+    font-family: "Cinzel", sans-serif;
+    color: #b89f64;
+}
+
+/* Footer */ 
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2c2c;
+    color: #b89f64;
+    width: 100%;
+    padding: 3rem;
+}
+
+.footer .socials-container {
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.footer img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.7rem;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 14px;
+    }
+
+    .about p {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    html {
+        font-size: 8.75px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 7.5px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 6.4px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 5.625px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 4.8px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #disappear {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 3px;
+    }
+
+    .about-content p {
+        line-height: 2.2rem;
+    }
+
+    #disappear {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .about-content p {
+        line-height: 1.9rem;
+    }
+}
